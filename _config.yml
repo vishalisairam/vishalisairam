@@ -1,0 +1,89 @@
+# Site Settings
+title: "Vishali Sairam"
+name: "Vishali Sairam"
+description: "Data Scientist & Policy Analyst"
+url: "https://vishalisairam.github.io"
+repository: "vishalisairam/vishalisairam.github.io"
+
+# Personal Information
+author:
+  name: "Vishali Sairam"
+  avatar: "images/vishali.jpg"
+  bio: "Data Scientist & Policy Analyst at World Bank | MPP from Hertie School | Working at the intersection of Technology and Development"
+  location: "Remote"
+  employer: "World Bank"
+  email: "vishalisairam@gmail.com"
+  linkedin: "vishalisairam"
+  github: "vishalisairam"
+
+# Site configuration
+minimal_mistakes_skin: "default"
+search: true
+search_full_content: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"

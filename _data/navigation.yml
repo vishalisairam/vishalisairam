@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: "Experience"
+    url: /experience/
+  - title: "Publications"
+    url: /publications/
+  - title: "Skills"
+    url: /skills/
+  - title: "Resume"
+    url: /assets/docs/Vishali_Sairam_Resume.pdf
